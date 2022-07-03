@@ -1,0 +1,89 @@
+{
+	"metadata": {
+		"version": 4.5,
+		"type": "Object",
+		"generator": "Object3D.toJSON"
+	},
+	"geometries": [
+		{
+			"uuid": "ccfb4ebf-d807-4a54-a0fb-808b92a67f45",
+			"type": "BoxGeometry",
+			"width": 1,
+			"height": 1,
+			"depth": 1,
+			"widthSegments": 1,
+			"heightSegments": 1,
+			"depthSegments": 1
+		}],
+	"materials": [
+		{
+			"uuid": "9acd2d16-5b50-40f6-a4e5-06bcaaf799f1",
+			"type": "MeshPhongMaterial",
+			"color": 16711679,
+			"emissive": 0,
+			"specular": 11119017,
+			"shininess": 30,
+			"reflectivity": 1,
+			"refractionRatio": 0.98,
+			"depthFunc": 3,
+			"depthTest": true,
+			"depthWrite": true,
+			"colorWrite": true,
+			"stencilWrite": false,
+			"stencilWriteMask": 255,
+			"stencilFunc": 519,
+			"stencilRef": 0,
+			"stencilFuncMask": 255,
+			"stencilFail": 7680,
+			"stencilZFail": 7680,
+			"stencilZPass": 7680
+		}],
+	"object": {
+		"uuid": "fbd9109c-e12c-4d25-9914-ce88263532cf",
+		"type": "Scene",
+		"name": "Scene",
+		"layers": 1,
+		"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+		"background": 2171169,
+		"children": [
+			{
+				"uuid": "5c4fface-2d6f-42da-94e7-f3b9b33c15b9",
+				"type": "Mesh",
+				"name": "Box",
+				"castShadow": true,
+				"receiveShadow": true,
+				"layers": 1,
+				"matrix": [-0.35580500259891706,-0.8894288605222609,0.286913056858097,0,0.7647680031671282,-0.10064648448548333,0.636396249590204,0,-0.5371524005879041,0.44585489481532686,0.7160172562947524,0,0.12796143270688587,3.314511099036109,0.12939222422400531,1],
+				"geometry": "ccfb4ebf-d807-4a54-a0fb-808b92a67f45",
+				"material": "9acd2d16-5b50-40f6-a4e5-06bcaaf799f1"
+			},
+			{
+				"uuid": "71acd3d0-af55-4a7a-97f2-8a810789913b",
+				"type": "SpotLight",
+				"name": "SpotLight",
+				"layers": 1,
+				"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,5,10,7.5,1],
+				"color": 16777215,
+				"intensity": 1,
+				"distance": 0,
+				"angle": 0.3141592653589793,
+				"decay": 1,
+				"penumbra": 0,
+				"shadow": {
+					"camera": {
+						"uuid": "1f3da927-ace2-46f0-aa2c-c6178358277f",
+						"type": "PerspectiveCamera",
+						"layers": 1,
+						"fov": 50,
+						"zoom": 1,
+						"near": 0.5,
+						"far": 500,
+						"focus": 10,
+						"aspect": 1,
+						"filmGauge": 35,
+						"filmOffset": 0
+					}
+				}
+			}]
+	}
+}

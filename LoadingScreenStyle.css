@@ -1,0 +1,34 @@
+* {
+    background-color: black;
+    overflow: hidden;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.LoadingText {
+    font-size: 5vmax;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 50vh;
+    animation: example 10s reverse;
+    transition: all 1s ease; 
+}
+
+.FullScreen {
+    color: white;
+    transition: all 1s ease; 
+}
+
+.FullScreen:Hover {
+    color: rgb(115, 255, 0);
+    transition: all 1s ease; 
+}
+
+@keyframes example {
+  20% {color: rgb(0, 0, 0);}
+  40% {color: rgb(255, 255, 255);}
+  60% {color: rgb(255, 0, 0);}
+  80% {color: rgb(255, 255, 255);}
+  100% {color: rgb(0, 0, 0);}
+}

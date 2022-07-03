@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="LoadingScreenStyle.css"> 
+    <script src="https://kit.fontawesome.com/a49e582e02.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="FullScreen" onclick="document.documentElement.requestFullscreen()">
+        <i class="fa-solid fa-window-maximize"></i>
+        Click here to enable Fullscreen (Press ESC to disable)
+
+        <!-- <input type="button" value="Fullscreen" onclick="document.documentElement.requestFullscreen()"/> -->
+                </div>
+<div class="LoadingText">
+    Enter ILC
+</div>
+
+
+
+
+</body>
+<script>
+
+    // (B) LISTEN TO FULLSCREEN TOGGLE
+    document.addEventListener("fullscreenchange", () => {
+      if (document.fullscreenElement===null) {
+        console.log("Exited fullscreen");
+      } else {
+        console.log("Entered fullscreen");
+      }
+    });
+
+    // (C) ON FULLSCREEN ERROR
+    document.addEventListener("fullscreenerror", (evt) => {
+      console.error(evt);
+    });
+    </script>
+</html>
